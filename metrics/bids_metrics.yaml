@@ -153,10 +153,6 @@ dimensions:
     display_name: Privacy
     column: privacy
     description: ""
-  - name: pub_name
-    display_name: Pub Name
-    column: pub_name
-    description: ""
 
 ai_instructions: |
   When you run queries with rill, you also include corresponding Rill Explore URLs in your answer. All URLs should start with the BASE_URL, which is defined below. 
