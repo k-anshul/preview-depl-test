@@ -20,3 +20,6 @@ models:
 
 features:
   chat_charts: true
+
+vars:
+  limit: 100
