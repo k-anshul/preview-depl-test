@@ -157,14 +157,6 @@ dimensions:
     display_name: Pub Name
     column: pub_name
     description: ""
-  - name: sdk
-    display_name: SDK
-    column: sdk
-    description: ""
-  - name: video_activity
-    display_name: Video Activity
-    column: video_activity
-    description: ""
 
 ai_instructions: |
   When you run queries with rill, you also include corresponding Rill Explore URLs in your answer. All URLs should start with the BASE_URL, which is defined below. 

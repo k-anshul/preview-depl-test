@@ -96,14 +96,6 @@ dimensions:
     display_name: Auction Type
     column: auction_type
     description: ""
-  - name: app_or_site
-    display_name: App or Site
-    column: app_or_site
-    description: ""
-  - name: device_country
-    display_name: "Device Country"
-    column: "device_country"
-    description: ""
 
 ai_instructions: |
   When you run queries with rill, you also include corresponding Rill Explore URLs in your answer.
