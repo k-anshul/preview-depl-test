@@ -13,4 +13,4 @@ shifted_data AS (
     * EXCLUDE (__time)
   FROM bids_data_raw, time_shift
 )
-SELECT * FROM shifted_data limit 2000
+SELECT * FROM shifted_data limit {{ .env.limit }}
