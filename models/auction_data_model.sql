@@ -15,4 +15,4 @@ shifted_data AS (
     CASE WHEN device_region ILIKE '%/%' THEN SPLIT(device_region, '/')[1] ELSE 'Unknown' END AS device_country
   FROM auction_data_raw, time_shift
 )
-SELECT * FROM shifted_data limit 2000
+SELECT * FROM shifted_data limit {{ .env.limit }}
