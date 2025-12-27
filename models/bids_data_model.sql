@@ -11,6 +11,6 @@ shifted_data AS (
   SELECT
     __time + (CURRENT_TIMESTAMP - time_shift.max_time) AS __time,
     * EXCLUDE (__time)
-  FROM bids_data_raw, time_shift
+  FROM {{ ref "bids_data_raw" }}, time_shift
 )
 SELECT * FROM shifted_data limit {{ .env.limit }}
